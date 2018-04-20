@@ -1,0 +1,741 @@
+/**************** Generic *********************/
+body {
+	padding:0 18px;
+	font-family:Arial,Helvetica,sans-serif;
+}
+body #doc4 {
+	width:100%;
+}
+a
+{
+	text-decoration:none;
+	color:#777;
+}
+a:hover
+{
+	text-decoration:underline;
+}
+a:visited
+{
+	color:#777;
+}
+strong
+{
+	font-weight:bold;
+}
+textarea
+{
+	*overflow:auto;
+}
+ul li
+{
+	list-style-type:disc;
+}
+ul
+{
+	padding-left:25px;
+}
+h2 {
+	font-weight:bold;
+}
+h3 {
+	font-size:1.4em;
+	color:#aaa;
+}
+.os-blue {
+	color:#68B5BF;
+}
+.bold {
+	font-weight:600;
+}
+.yui-container {
+	padding:21px 20px;
+	padding-bottom:40px;
+}
+#bd 
+{
+	background-color:#fafafe;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafe+0,efefef+100 */
+	background: rgb(250,250,254); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(249,249,254,1) 0%, rgba(239,239,239,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(249,249,254,1) 0%,rgba(239,239,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: /*url('../img/peace-lovers-bird.png'),*/
+	linear-gradient(to bottom, rgba(249,249,254,1) 0%,rgba(239,239,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafe', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+    background-attachment:scroll;
+	position:relative;
+	padding:0;
+	height:100%;
+	overflow:hidden; /* This is needed to crop the peace lovers bird at the bottom left. */
+	margin-bottom:18px; /* This is needed for space at the bottom of the website. */
+}
+.content-container {
+	
+	min-height:450px; /* This ensures the footer border-bottom aligns with the bottom of the body */
+	color:#FE9531;
+}
+#side-bar {
+	/* This element is for positioning horizontally within the golden rectangle. */
+	position:relative;
+	top:0px;
+	left:-15px;
+	width:438px;
+	background:red;
+	float:left; 
+	z-index:19;
+	display:none;
+}
+/**************** Header *********************/
+#hd 
+{
+	/* Logo only displays as a background image below 440px */
+	height:270px;/*236px*/ /*18.4615em; 243px; */
+	*background-position: 0% 0%;
+	margin-bottom:12.1px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6cbac6+0,c6d7eb+100 */
+background: rgb(108,186,198); /* Old browsers */
+background-image: url('../img/omissionstudios-logo-orange-w-om-symbol-small-device.png'), 		-moz-linear-gradient(top,  rgba(108,186,198,1) 0%, rgba(198,215,235,1) 100%); /* FF3.6-15 */
+background:url('../img/omissionstudios-logo-orange-w-om-symbol-small-device.png'), -webkit-linear-gradient(top,  rgba(108,186,198,1) 0%,rgba(198,215,235,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background-image:url('../img/omissionstudios-logo-orange-w-om-symbol-small-device.png'),
+	linear-gradient(to bottom,  rgba(108,186,198,1) 0%,rgba(198,215,235,1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cbac6', endColorstr='#c6d7eb',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+background-size:89%, 100%;
+background-position:12px 85%, 0 0;
+position:relative;
+}
+#row-contianer { /* For determining the golden rectangle vertically */
+	height:103px;
+	width:100%;
+	background:rgba(125,125,125,.3);
+	position:absolute;
+	top:0;
+	display:none;
+}
+.navbar-default {
+	background-image:none;
+	background-color:transparent;
+	border-color:transparent;
+	box-shadow:none;
+	position:absolute;
+	z-index:14;
+	right:36px;
+}
+#menu-navigation .menu-item {
+	margin-top:0;
+	margin-right:0;
+	text-align:center;
+	background:rgba(197,225,232,.73);
+	border-radius:2px;
+}
+#menu-navigation .menu-item a {
+	width:100px;
+	padding-top:20px;
+	font-weight:500;
+	border-bottom:1px dashed rgba(185,142,86,.4);
+	border-radius:2px;
+	color:#f8f8f8;
+	text-shadow:1px 1px 0 rgba(252,141,56,.7);
+}
+#menu-navigation .menu-item-150 a {
+	border:0;
+}
+#menu-navigation .menu-item a:hover {
+	background:rgba(197,225,232,.81);
+}
+.logo-container {
+	max-width:410px;
+	margin:0 18px;
+}
+#omissionstudios-logo-larger-device {
+	display:none; /* Displays on 440px and above */
+}
+.logo-container h4 {
+	display:none;
+}
+.nav
+{
+	/* width:400px;
+	float:right;
+	height:100px;
+	margin-right:50px; */
+}
+/**************** Front Page *********************/
+.yui-gb .yui-u {
+	/* width:20.39em; */
+	width:100%;
+	margin-left:0;
+} 
+.yui-u .col h2
+{
+	font-size:153.9%;
+	padding-bottom:7px;
+}
+.column1,
+.column2,
+.column3
+{
+background: linear-gradient(13deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 32%,rgba(246,222,221,0) 52%,rgba(198,215,235,.58) 100%) no-repeat border-box, linear-gradient(to bottom, rgba(255,255,255,.72) 0%,rgba(236,236,236,.1) 100%) no-repeat border-box; 
+background-origin:padding-box, padding-box;
+	height:201px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	padding:15px;
+	color:#8b9799;
+	font-size:1.08em;
+	line-height:1.525em;
+	height:100%;
+	margin-bottom:25px;
+	overflow:hidden;
+	position:relative;
+	z-index:8; /* This is needed otherwise the columns could go behind the footer at a smaller screen size. */
+	/* Watch inspiration bird */
+}
+.column1 .textwidget,
+.column2 .textwidget,
+.column3 .textwidget {
+	font-size:.9em;
+}
+.column1 h2,
+.column2 h2,
+.column3 h2 {
+	margin:0;
+	padding:0;
+	padding:.35em 0;
+	margin-bottom:.32em;
+	font-size:1.08em;
+}
+.column3 {
+	margin-bottom:81px;
+}
+#arjuna-d-ghose-pic {
+	float:left;
+	width:105px;
+	height:auto;
+	box-sizing:border-box;
+	border:3px solid #fff;
+	border-radius:6px;
+	margin-right:13px;
+	box-shadow:1px 1px 1px #68B5BF;
+}
+#sri-chinmoy-front {
+	/* width:? */
+	position:absolute;
+	/* top:? */
+	right:1px;
+	z-index:9; /* This is needed so it remains above the columns. */
+	display:none;
+}
+#peace-lovers-bird {
+	width:460px;
+	position:absolute;
+	left:0px;
+	bottom:-67px;
+	z-index:7; /* Arbitrary high number */
+}
+/**************** Blog Page *********************/
+.blog .yui-container {
+
+}
+.blog .content-container,
+.single .content-container,
+.archive .content-container,
+.search .content-container {
+	/* padding-top:0; */
+	width:100%;
+	box-sizing:border-box;
+	float:left;
+}
+.blog .content {
+	
+	/* background-image:url('../img/om-symbol.png');
+	background-repeat:no-repeat;
+	background-position:-25px 0;*/
+}
+.page-header {
+	padding-left:15px;
+	color:#ababab;
+	margin-top:5px;
+}
+.blog .inner-content,
+.single .inner-content,
+.archive .inner-content,
+.search .inner-content {
+	background: linear-gradient(9.4deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 32%,rgba(246,222,221,0) 52%,rgba(198,215,235,.58) 100%) no-repeat border-box, linear-gradient(to bottom, rgba(255,255,255,.72) 0%,rgba(236,236,236,.1) 100%) no-repeat border-box; 
+	background-origin:padding-box, padding-box;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	padding:15px;
+	height:100%;
+	color:#8b9799;
+	font-size:1.08em;
+	line-height:1.525em;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+	z-index:8;
+}
+.blog .content h3 a {
+    font-size:1.1em;
+    color:#fe9630;
+	font-weight:600;
+}
+.single .content h3 {
+	margin-top:14px;
+	margin-bottom:18px;
+	font-size:1.7em;
+	font-weight:400;
+}
+.archive .content h4 a,
+.search .content h4 a {
+	color:#b2b2b2;
+	font-weight:600;
+}
+.archive .content h4 a:hover,
+.search .content h4 a:hover {
+	 color:#fe9630;
+	 text-decoration:underline;
+}
+.archive .content h4,
+.search .content h4 {
+	margin-top:7px;
+}
+.blog .meta,
+.archive .meta,
+.search .meta {
+	margin-bottom:70px;
+}
+.single .meta {
+	margin-bottom:17px;
+}
+.blog .meta a {
+	color:#e0cb40;
+	text-decoration:underline;
+}
+.blog .meta a:hover {
+	color:#ebbb3b;
+}
+.blog .post-thumbnail,
+.archive .post-thumbnail,
+.search .post-thumbnail {
+	float:left;
+	margin-right:9px;
+}
+.blog .sidebar,
+.single .sidebar,
+.archive .sidebar,
+.search .sidebar {
+	padding:0;
+	width:100%;
+	box-sizing:border-box;
+	float:right;
+	text-align:left;
+}
+.blog .sidebar input,
+.single .sidebar input,
+.archive .sidebar input,
+.search .sidebar input {
+	width:100%;
+	max-width:94%;
+	position:relative;
+
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+.blog h3.blurb-three-dots,
+.archive h3.blurb-three-dots,
+.search h3.blurb-three-dots {
+	margin-top:22px;
+	text-align:right;
+	letter-spacing:.12em;
+	font-size:1.03em;
+}	
+.blog h3.blurb-three-dots a,
+.archive h3.blurb-three-dots a,
+.search h3.blurb-three-dots a {
+	color:#d6d844;
+}
+.blog h3.blurb-three-dots a:hover,
+.archive h3.blurb-three-dots a:hover,
+.search h3.blurb-three-dots a:hover {
+	text-decoration:none;
+	color:#f9a733;
+}
+/**************** Portfolio *********************/
+#left_side_portfolio_container
+{
+	width:400px;
+	height:320px;
+	float:left;
+	margin:27px 27px 0px 20px;
+}
+.small_website_thumbs_container_column
+{
+	width:190px;
+}
+.small_portfolio_website_thumb
+{
+	width:168px;
+	border-radius:9px;
+	background:white;
+	height:85px;
+	margin-bottom:18px;
+	border:8px solid white;
+}
+.small_portfolio_website_thumb#gri
+{
+	background-image:url('images/gri_small.jpg');
+	border-color:#4cbeb5;
+}
+.small_portfolio_website_thumb#cosw
+{
+	background-image:url('images/cosw_small.jpg');
+}
+.small_portfolio_website_thumb#jcm-lillies
+{
+	background-image:url('images/jcm-lillies_small.jpg');
+}
+.small_portfolio_website_thumb#hebb
+{
+	background-image:url('images/hebb_small.jpg');
+}
+.small_portfolio_website_thumb#gri:hover,
+.small_portfolio_website_thumb#cosw:hover,
+.small_portfolio_website_thumb#jcm-lillies:hover,
+.small_portfolio_website_thumb#hebb:hover
+{
+	box-shadow:0px 0px 2px 6px #e5e5e7;
+}
+#big_portfolio_website_thumb:hover
+{
+	box-shadow:0px 0px 4px 12px #e5e5e7;
+}
+#right_side_portfolio_container
+{
+	width:485px;
+	height:320px;
+	float:left;
+}
+#big_portfolio_website_thumb
+{
+	margin-top:27px;
+	border-radius:9px;
+	width:90%;
+	height:270px;
+	background-image:url('images/gri_large.jpg');
+	background-repeat:no-repeat;
+}
+#website_name_for_big_portfolio_website_thumb
+{
+	padding-top:7px;
+	padding-left:1px;
+	padding-right:13px;
+	float:left;
+}
+#visit_website_link_for_big_portfolio_website_thumb
+{
+	padding-top:7px;
+}
+#website_name_for_big_portfolio_website_thumb a#website_name_website_link
+{
+	color:black;
+}
+#website_work_description
+{
+	color:#888;
+	font-size:85%;
+	position:relative;
+	top:-1px;
+}
+#to_portfolio_link
+{
+    margin:250px 0 0 114px;
+	text-align:right;
+}
+#to_portfolio_link a
+{
+  text-decoration:underline;
+  color:#717171;  
+}
+#to_portfolio_link a:hover
+{
+   color:#222; 
+}
+#previous_next_container
+{
+	font-family:helvetica,arial,clean,sans-serif;
+	font-size:93%;
+	text-align:center;
+	margin-top:5px;
+}
+#previous_next_container a.previous_next_link
+{
+	color:red;
+}
+#previous_next_container a.previous_next_link:visited
+{
+	color:red;
+}
+/**************** Contact Page *********************/
+.page-id-29 h5.connect-with-me-heading {
+	clear:right;
+	color:#999;
+	padding-left:13px;
+	padding-top:15px;
+}
+.page-id-29 h5.connect-with-me-heading.first {
+	margin-top:15px;
+	padding-top:0;
+}
+.page-id-29 .social-media-label {
+	clear:right;
+	font-size:small;
+	padding-left:35px;
+	color:#888;
+	font-style:italic;
+}
+.page-id-29 .freelancing-widget.first {
+	margin-top:-20px;
+}
+.page-id-29 .freelancing-widget {
+	float:right;
+	margin-top:0;
+	margin-bottom:15px;
+}
+.page-id-29 h2 {
+	font-size:1.9em;
+	color:#bbb;
+}
+.page-id-29 .yui-u.first {
+	width:100%;
+	float:left;
+	border-bottom:1px solid #ccc;
+	padding-bottom:35px;
+}
+.page-id-29 .yui {
+	margin-top:0;
+	height:100%;
+	float:left;
+	width:100%;
+}
+label {
+	color:#565656;
+	font-size:1em;
+	line-height:1.525em;
+	font-weight:normal;
+}
+input:not([type="radio"]):not([type="checkbox"]), .uk-form select {
+    vertical-align: middle;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	height: 40px;
+	width:100%;
+	max-width:100%;
+	padding: 11px;
+	border: 1px solid #ddd;
+	background: #fff;
+	color: #444;
+	-webkit-transition: all 0.2s linear;
+	-webkit-transition-property: border, background, color, box-shadow, padding;
+	transition: all 0.2s linear;
+	transition-property: border, background, color, box-shadow, padding;
+	border-radius: 4px;
+}
+.page-id-29 textarea {
+	height:210px;
+}
+.wpcf7 input[type="submit"]
+{
+    /* padding:7px 18px 7px 18px; */
+	height:2.7em;
+	padding:.4em .7em;
+	line-height:1.9;
+	float:right;
+}
+.wpcf7 .wpcf7-submit {
+	display:inline-block;
+	border:1px solid #d4d4cc;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	padding:.4em .7em;
+	background:#edeff2;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top, #fefefe 0%, #edeff2 55%, #e4e6e9 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fefefe 0%,#edeff2 55%,#e4e6e9 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fefefe 0%,#edeff2 55%,#e4e6e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e4e6e9',GradientType=0 ); /* IE6-8 */
+	box-shadow:rgba(160,172,187,.7) 0 0 .18em 0;
+	color:#6c7786;
+	font-size:1.1em;
+	text-shadow:#fefefe 1px 0 1px;
+	line-height:1.375em;
+	cursor:pointer;
+	margin-bottom:61px;
+}
+.wpcf7 .wpcf7-submit:hover,
+.wpcf7 .wpcf7-submit:focus {
+	box-shadow:#129ceb 0 0 2px;
+	background: #e6e9eb; /* Old browsers */
+	background: -moz-linear-gradient(top, #f7f7f7 0%, #f6f6f7 55%, #e6e9eb 100%, #7db9e8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f7f7f7 0%,#f6f6f7 55%,#e6e9eb 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f7f7f7 0%,#f6f6f7 55%,#e6e9eb 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+	color:#45484b;
+	text-shadow:rgb(255,255,255) 1px 1px 0;
+	border-color:#c9c9c0; 
+}
+.wpcf7 {
+	float:left;
+}
+.wpcf7 #textarea {/* Needed for lightgreen background-color on field for Webkit */
+	background:#fff;
+}
+.wpcf7 #textarea:focus,
+.wpcf7 #textarea:active {/* Needed for lightgreen background-color on field for Webkit */
+	background:#F5FBFE;
+}
+/* Below: i need the textarea to be 100% width */
+.wpcf7 label {
+	display:block;
+}
+#wpcf7-f48-o1 {
+	width:100%;
+	max-width:100%;
+}
+.wpcf7 #textarea {
+	width:100%;
+	max-width:100%;
+}
+.wpcf7 #contact-form-container {
+	width:100%;
+	max-width:100%;
+	padding:0;
+	border:none;
+	margin:0;
+	padding-top:17px;
+}
+.wpcf7 input[type="submit"] {
+	float:right;
+}
+/**************** Footer *********************/
+#ft {
+	background-color:transparent;
+	margin:0;
+	border-bottom:3px solid #85C2D0;
+	width:100%;
+	position:relative;
+	bottom:20px;
+	clear:both;
+}
+.blog #ft,
+.single #ft {
+	height:130px;
+	bottom:0;
+}
+.footer-note {
+	font-size:.76em;
+	letter-spacing:.2px;
+	line-height:1.26;
+	position:absolute;
+	text-align:center;
+	margin:0 auto;
+	z-index:13;
+	bottom:0;
+}
+.footer-note.right {
+	color:#F37152;
+	width:100%;
+	padding-top:32px;
+	background-image:url('../img/soul-birds.png');
+	background-size:76px;
+	background-repeat:no-repeat;
+	background-position:center top;
+	bottom:14px;
+}
+.footer-note.right span::before { /* Add a line break right before the span on smaller screen sizes */
+  content: "\A";
+  white-space: pre;
+}
+.footer-note.left {
+	color:#FD8A35;
+	display:none;
+}
+#copyright {
+	color:#FD8A35;/*rgba(27,132,27,.63)*/
+	font-size:.77em;
+	padding:0 2px 4px 0;
+	text-align:center;
+	width:100%;
+	position:absolute;
+	z-index:13;
+	margin:0 auto;
+	bottom:-4px;
+}
+@media (min-width: 480px) { /* At 480px and up, remove the logo as a background image and display the logo as an inline image */
+	#hd {
+		background: rgb(108,186,198); /* Old browsers */
+		background-image: -moz-linear-gradient(top,  rgba(108,186,198,1) 0%, rgba(198,215,235,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(108,186,198,1) 0%,rgba(198,215,235,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background-image:linear-gradient(to bottom,  rgba(108,186,198,1) 0%,rgba(198,215,235,1) 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cbac6', endColorstr='#c6d7eb',GradientType=0 ); /* IE6-9 */
+	}
+	#omissionstudios-logo-larger-device {
+		position:absolute;
+		top:66px;
+		left:18px;
+		width:410px;
+		height:auto;
+		display:block;
+	} 
+	.logo-container h4#description {
+		display:none;
+		color:#F9F9Fa;
+		position:absolute;
+		top:-67px;
+		left:151px;
+		font-size:10.5px;
+		font:normal;
+		font-weight:bold;
+	}
+	input[type="text"],
+	input[type="email"] {
+		max-width:85%;
+	}
+}
+@media (min-width: 510px) { 
+	.footer-note span::before {/* Remove the line break that was added for smaller screen sizes */
+	  content:"";
+	  white-space:normal;
+	}
+}
+@media (min-width: 580px) { 
+	#menu-navigation .menu-item {
+		margin-right:63px;/* Move the drop down nav to the left so it doesn't cover SC pic */
+		background:rgba(197,225,232,.63);
+	}
+	#sri-chinmoy-front {/* Display the SC line art picture on the front page */
+		width:140px;
+		top:126px;
+		display:block;
+	}
+	.page-id-29 .yui-u.first {
+		padding-right:34%;
+	}
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+a:active,
+a:focus {
+	outline:0;
+}
